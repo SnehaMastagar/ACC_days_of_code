@@ -1,0 +1,23 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+int n;
+cin>>n;
+cout<<endl;
+for(int i;i<=n;i++)
+{
+    int water;
+    cin>>water;
+    cout<<endl;
+    if(water>=2000)
+    {
+        cout<<"Yes";
+    }
+    else
+    {
+        cout<<"No";
+    }
+}
+}
