@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int t;
+cin>>t;
+for(int i=0;i<t;i++)
+{
+    int x,y;           //x = rent and y = purchase
+    cin>>x>>y;
+    int months = 0;
+     while (x * months < y) {
+        months++;
+    }
+
+    cout << months - 1 << endl;
+}
+	return 0;
+}
