@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t = 0;
+	cin >> t;
+	while(t--){
+	    int geyser = 0, bucket = 0;
+	    cin >> geyser >> bucket;
+	    cout << geyser / (bucket * 2) << endl;
+	}
+	return 0;
+}
