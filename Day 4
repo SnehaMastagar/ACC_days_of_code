@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int c = 100; // Total chocolates in the store
+    int x; // Chef's daily goal
+    int y; // Chocolates sold by Chef
+    int t;
+    cin>>t;
+    for (int i=0;i<=t;i++)
+    {
+    cin >> x;
+
+    cin >> y;
+
+    if (y <= x) {
+        // Chef sells exactly X chocolates
+        int totalAmount = y; // Chef gets 1 rupee for each chocolate sold
+        cout <<  totalAmount <<endl;
+    } else {
+        // Chef sells more than X chocolates
+        int extraChocolates = y - x;
+        int totalAmount = x + 2 * extraChocolates; // Chef gets 1 rupee for the first X chocolates and 2 rupees for each extra chocolate
+       cout  << totalAmount  << endl;
+    }
+    }
+
+    return 0;
+}
