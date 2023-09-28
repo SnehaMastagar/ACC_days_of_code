@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int t;
+cin>>t;
+while (t--)
+{
+    int n;//runs to win
+    int m;//number of overs
+    int totalballs,maxruns;
+    cin>>n>>m;
+    totalballs=6*m;
+    maxruns=totalballs*6;
+    if(maxruns>=n)
+    {
+        cout<<"Yes"<<endl;
+    }
+    else
+    {
+        cout<<"No"<<endl;
+    }
+}
+	return 0;
+}
