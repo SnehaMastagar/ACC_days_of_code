@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int x;//bullet moves at pixels
+        int y;//goomba standing away
+        int z;//time in seconds
+        int d;
+        cin>>x>>y>>z;
+        d=y/x;
+        if(z>d)
+        {
+            cout<<z-d<<endl;
+        }
+        else
+        {
+            cout<<"0"<<endl;
+        }
+    }
+    return 0;
+}
