@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int t;
+cin>>t;
+while(t--)
+{
+    int a;//units of power each year
+    int b;//next years
+    int x;//moon has grams of helium-3
+    int y;//1 gram of helium-3 provide power
+    cin>>a>>b>>x>>y;
+    int moon;
+    moon=x*y;//moon can provide power
+    int project;
+    project=a*b;//to prove its worth
+    if(moon>=project)
+    {
+        cout<<"Yes"<<endl;
+    }
+    else if(moon<project)
+    {
+        cout<<"No"<<endl;
+    }
+}
+	return 0;
+}
