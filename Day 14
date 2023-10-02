@@ -1,0 +1,36 @@
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int minMoves(int X, int Y) {
+    int minm[X + 1];
+    minm[0] = 0;
+
+    for (int i = 1; i <= X; ++i) {
+        minm[i] = INT_MAX;
+
+        if (i >= Y) {
+            minm[i] = min(minm[i], minm[i - Y] + 1);
+        }
+        minm[i] = min(minm[i], minm[i - 1] + 1);
+    }
+
+    return minm[X];
+}
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int X, Y;
+    cin >> X;
+    cin >> Y;
+
+    int minimum_moves = minMoves(X, Y);
+    cout << minimum_moves << endl;
+
+    }
+    return 0;
+}
