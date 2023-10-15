@@ -1,0 +1,57 @@
+#include<iostream>
+using namespace std;
+
+class cal{
+  public:
+  int add(int a,int b)
+  {
+      return a+b;
+  }
+  int sub(int a,int b)
+  {
+      return a-b;
+  }
+  int multiply(int a,int b)
+  {
+      return a*b;
+  }
+  int divide(int a,int b)
+  {
+      return a/b;
+  }
+};
+
+int main()
+{
+    cal c;
+    int n,m;
+    cin>>n;
+    cin>>m;
+    char o;
+    cin>>o;
+    float result;
+    
+    switch(o)
+    {
+        case'+':
+        result=c.add(n,m);
+        cout<<result<<endl;
+        break;
+    
+        case'-':
+        result=c.sub(n,m);
+        cout<<result<<endl;
+        break;
+    
+        case'*':
+        result=c.multiply(n,m);
+        cout<<result<<endl;
+        break;
+    
+        case'/':
+        result=c.divide(n,m);
+        cout<<result<<endl;
+        break;
+    }
+    return 0;
+}
