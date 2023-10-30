@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n;//cost of online orders
+	    int m;//cost of eating at restaurant
+	    float dis=0.1;//discount coupon on online orders
+	    cin>>n>>m;
+	    float final= n-(n*0.1);//final price of ordering online
+	    if(m<final)
+	    {
+	        cout<<"DINING"<<endl;
+	    }
+	    else if(final<m)
+	    {
+	        cout<<"ONLINE"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"EITHER"<<endl;
+	    }
+	   
+	}
+	return 0;
+}
