@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int x,y;//skills of the teams
+	    int d;//maximum skill difference
+	    cin>>x>>y>>d;
+	    int result=abs(x-y);
+	    if(result<=d)
+	    {
+	        cout<<"Yes"<<endl;
+	    }
+	    else if(result>d)
+	    {
+	        cout<<"No"<<endl;
+	    }
+	}
+	return 0;
+}
